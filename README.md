@@ -55,13 +55,13 @@ flask db upgrade
 
 Alternatively, app.py can use db.create_all() to initialize tables on first run.
 
-##Start the Flask Application:
+### Start the Flask Application:
 ```bash
 python app.py
 ```
 Access the application at http://127.0.0.1:5000.
 
-##Documentation
+## Documentation
 To generate HTML documentation with Sphinx:
 
 ```bash
@@ -69,23 +69,23 @@ cd docs
 make html
 ```
 
-##Unit Testing
+## Unit Testing
 Run tests with:
 
 ```bash
 python -m unittest discover -s unit_testing
 ```
 
-##Mock Data Generation
+## Mock Data Generation
 Mock job listings can be generated within app.py using generate_job_listings() for demonstration purposes.
 
-##Email Notifications Setup
+## Email Notifications Setup
 Requires Gmail API credentials for email notifications.
 
 1. Generate client_secret.json: Follow Google’s guide.
 2. Authenticate on First Run: The app will prompt for Gmail authentication, creating token.pickle for future use.
 
-##Future Improvements
+## Future Improvements
 - Implement actual job listing scraping from external sources.
 - Add more filters (e.g., company size, skills).
 - Enhance user registration with password recovery.
